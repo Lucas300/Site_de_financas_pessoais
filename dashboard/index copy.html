@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--Talvez remover depois links do bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  
 
     <title>Bubble finance</title>
 
@@ -209,33 +215,37 @@
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
+                        
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                <h4>SALDO</h4></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$: 1200,00</div>
+                            <a class="text-decoration-none" data-toggle="collapse"  href="#" role="button" aria-expanded="false" aria-controls="compra">
+                                <div class="card border-left-danger shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                    <h4>SALDO</h4></div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">R$: 1200,00</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                                                <lord-icon src="https://cdn.lordicon.com/gsvbkwao.json" trigger="hover" colors="primary:#FF0000" style="width:65px;height:100px"></lord-icon>
+                                            </div>
                                         </div>
-                                        <div class="col-auto">
-                                            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                                            <lord-icon src="https://cdn.lordicon.com/gsvbkwao.json" trigger="hover" colors="primary:#FF0000" style="width:65px;height:100px"></lord-icon>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="progress progress-sm mt-2">
-                                            <div class="progress-bar bg-danger" role="progressbar"
+                                        <div class="col">
+                                            <div class="progress progress-sm mt-2">
+                                                <div class="progress-bar bg-danger" role="progressbar"
                                                 style="width: 40%" aria-valuenow="50" aria-valuemin="0"
                                                 aria-valuemax="100"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </a>
                             </div>
-                        </div>
-
+                        
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
+                            <a class="text-decoration-none" data-toggle="collapse"  href="#compra" role="button" aria-expanded="false" aria-controls="compra">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -259,10 +269,12 @@
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
+                            <a class="text-decoration-none" data-toggle="collapse"  href="#conta" role="button" aria-expanded="false" aria-controls="conta">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -286,10 +298,12 @@
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
 
                         <!-- Pending Requests Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
+                            <a class="text-decoration-none" data-toggle="collapse"  href="#lazer" role="button" aria-expanded="false" aria-controls="lazer">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -313,8 +327,371 @@
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
+
+
+                     <!--Colapse /////////////////////////////////////////////////////////////////////////// -->
+                
+                    <div class="collapse mb-4" id="compra">
+                      <div class="card card-body">
+                        <!--Formulario-->
+                        <div class="d-flex align-items-center justify-content-center mb-0" style="height: 75 vh">
+                            <div class=" rounded-2 p-2 mb-0 " style="height: 650px; width: 650px;">
+                            <div class="container bg-white rounded-5 p-5 mb-0">
+                            <div class="container d-flex justify-content-center p-1 ">
+               
+                        </div>
+                        <h3 class="text-center mt-3" style="font-family: 'Tilt Warp', cursive;">Cadastre uma compra</h3>
+                        <form class="p-3 was-validated">
+              
+                    <!--Podemos usar o placeholder="Digite seu nome"-->
+                    <!--podemos usar o for="id" do label para refenciar o id do input-->
+                   <!--CAMPO DO NOME-->
+                            <div class="my-3">
+                      <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="nome"  name="nome">
+                        <label for="nome">Descrição da compra</label>
+                      </div>
+                    </div>
+
+                    <!--CAMPO DO EMAIL-->
+                    <div class="my-3">
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="number" class="form-control" id="parcela"   name="email">
+                          <label for="email">Quantas parcelas?</label>
+                        </div>
+                      </div>
+
+                    <!--CAMPO DO SALARIO-->
+                    <div class="my-3">
+                        <div class="my-3">
+                            <div class="form-floating mb-3 mt-3">
+                              <input type="number" class="form-control" id="salario"  name="salario">
+                              <label for="salario">Valor da compra</label>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!--CAMPOS DE SELECTS-->
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Nivel de importância</option>
+                        <option value="1">baixo</option>
+                        <option value="2">médio</option>
+                        <option value="3">alto</option>
+                        <option value="3">irrelevante</option>
+                      </select>
+
+                      <select class="form-select mt-3" aria-label="Default select example">
+                        <option selected>Forma de pagamento</option>
+                        <option value="1">Crédito</option>
+                        <option value="2">Débito</option>
+                        <option value="3">Boleto</option>
+                        <option value="3">Dinheiro</option>
+                      </select>
+
+                      
+
+                    <!--Botões-->
+                    <div class="d-flex justify-content-end mt-3">
+                        <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
+                    </div>
+
+                    
+                    
+                 </form>
+                 
+                 </div>
+                </div>
+                </div>
+                  </div>
+                  <!-- Content Row -->
+                  <div class="row">
+                    <div class="col-lg mb-4">
+
+                        <!-- Illustrations -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Compras</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Tipo</th>
+                                        <th scope="col">Descrição</th>
+                                        <th scope="col">valor</th>
+                                        <th scope="col">data</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Compas</td>
+                                        <td>Compra do mes</td>
+                                        <td>R$: 900,00</td>
+                                        <td>13/05/2023</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                    </div>
+
+                     <!--Colapse /////////////////////////////////////////////////////////////////////////// -->
+                
+                     <div class="collapse mb-4" id="conta">
+                        <div class="card card-body">
+                          <!--Formulario-->
+                          <div class="d-flex align-items-center justify-content-center mb-0" style="height: 75 vh">
+                              <div class=" rounded-2 p-2 mb-0 " style="height: 650px; width: 650px;">
+                              <div class="container bg-white rounded-5 p-5 mb-0">
+                              <div class="container d-flex justify-content-center p-1 ">
+                 
+                          </div>
+                          <h3 class="text-center mt-1" style="font-family: 'Tilt Warp', cursive;">Cadastre uma conta</h3>
+                          <form class="p-3 was-validated">
+                
+                      <!--Podemos usar o placeholder="Digite seu nome"-->
+                      <!--podemos usar o for="id" do label para refenciar o id do input-->
+                     <!--CAMPO DO NOME-->
+                              <div class="my-3">
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="text" class="form-control" id="nome"  name="nome">
+                          <label for="nome">Descrição da conta</label>
+                        </div>
+                      </div>
+  
+                      <!--CAMPO DO EMAIL-->
+                      <div class="my-3">
+                          <div class="form-floating mb-3 mt-3">
+                            <input type="number" class="form-control" id="parcela"   name="email">
+                            <label for="email">Quantas parcelas?</label>
+                          </div>
+                        </div>
+  
+                      <!--CAMPO DO SALARIO-->
+                      <div class="my-3">
+                          <div class="my-3">
+                              <div class="form-floating mb-3 mt-3">
+                                <input type="number" class="form-control" id="salario"  name="salario">
+                                <label for="salario">Valor da conta</label>
+                              </div>
+                            </div>
+                      </div>
+  
+                      <!--CAMPOS DE SELECTS-->
+                      <select class="form-select" aria-label="Default select example">
+                          <option selected>Nivel de importância</option>
+                          <option value="1">baixo</option>
+                          <option value="2">médio</option>
+                          <option value="3">alto</option>
+                          <option value="3">irrelevante</option>
+                        </select>
+  
+                        <select class="form-select mt-3" aria-label="Default select example">
+                          <option selected>Forma de pagamento</option>
+                          <option value="1">Crédito</option>
+                          <option value="2">Débito</option>
+                          <option value="3">Boleto</option>
+                          <option value="3">Dinheiro</option>
+                        </select>
+  
+                        
+  
+                      <!--Botões-->
+                      <div class="d-flex justify-content-end mt-3">
+                          <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
+                      </div>
+  
+                      
+                      
+                   </form>
+                   
+                   </div>
+                  </div>
+                  </div>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row">
+                      <div class="col-lg mb-4">
+  
+                          <!-- Illustrations -->
+                          <div class="card shadow mb-4">
+                              <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">Contas</h6>
+                              </div>
+                              <div class="card-body">
+                                  <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">ID</th>
+                                          <th scope="col">Tipo</th>
+                                          <th scope="col">Descrição</th>
+                                          <th scope="col">valor</th>
+                                          <th scope="col">data</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Contas</td>
+                                            <td>conta de agua</td>
+                                            <td>R$: 100,00</td>
+                                            <td>13/05/2023</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Contas</td>
+                                            <td>conta de luz</td>
+                                            <td>R$: 200,00</td>
+                                            <td>13/05/2023</td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+                      </div>
+
+                      <!--Colapse /////////////////////////////////////////////////////////////////////////// -->
+                
+                     <div class="collapse mb-4" id="lazer">
+                        <div class="card card-body">
+                          <!--Formulario-->
+                          <div class="d-flex align-items-center justify-content-center bg-black mb-0" style="height: 75 vh">
+                              <div class=" rounded-2 p-2 mb-0 " style="height: 650px; width: 650px;">
+                              <div class="container bg-white rounded-5 p-5 mb-0">
+                              <div class="container d-flex justify-content-center p-1 ">
+                 
+                          </div>
+                          <h3 class="text-center mt-3" style="font-family: 'Tilt Warp', cursive;">Cadastre a atividade de lazer</h3>
+                          <form class="p-3 was-validated">
+                
+                      <!--Podemos usar o placeholder="Digite seu nome"-->
+                      <!--podemos usar o for="id" do label para refenciar o id do input-->
+                     <!--CAMPO DO NOME-->
+                              <div class="my-3">
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="text" class="form-control" id="nome"  name="nome">
+                          <label for="nome">Descrição da atividade de lazer</label>
+                        </div>
+                      </div>
+  
+                      <!--CAMPO DO EMAIL-->
+                      <div class="my-3">
+                          <div class="form-floating mb-3 mt-3">
+                            <input type="number" class="form-control" id="parcela"   name="email">
+                            <label for="email">Quantas parcelas?</label>
+                          </div>
+                        </div>
+  
+                      <!--CAMPO DO SALARIO-->
+                      <div class="my-3">
+                          <div class="my-3">
+                              <div class="form-floating mb-3 mt-3">
+                                <input type="number" class="form-control" id="salario"  name="salario">
+                                <label for="salario">Valor da atividade</label>
+                              </div>
+                            </div>
+                      </div>
+  
+                      <!--CAMPOS DE SELECTS-->
+                      <select class="form-select" aria-label="Default select example">
+                          <option selected>Nivel de importância</option>
+                          <option value="1">baixo</option>
+                          <option value="2">médio</option>
+                          <option value="3">alto</option>
+                          <option value="3">irrelevante</option>
+                        </select>
+  
+                        <select class="form-select mt-3" aria-label="Default select example">
+                          <option selected>Forma de pagamento</option>
+                          <option value="1">Crédito</option>
+                          <option value="2">Débito</option>
+                          <option value="3">Boleto</option>
+                          <option value="3">Dinheiro</option>
+                        </select>
+  
+                        
+  
+                      <!--Botões-->
+                      <div class="d-flex justify-content-end mt-3">
+                          <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
+                      </div>
+  
+                      
+                      
+                   </form>
+                   
+                   </div>
+                  </div>
+                  </div>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row">
+                      <div class="col-lg mb-4">
+  
+                          <!-- Illustrations -->
+                          <div class="card shadow mb-4">
+                              <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">Lazer</h6>
+                              </div>
+                              <div class="card-body">
+                                  <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">ID</th>
+                                          <th scope="col">Tipo</th>
+                                          <th scope="col">Descrição</th>
+                                          <th scope="col">valor</th>
+                                          <th scope="col">data</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>lazer</td>
+                                            <td>Parque de diversões</td>
+                                            <td>R$: 250,00</td>
+                                            <td>04/05/2023</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Lazer</td>
+                                            <td>cinema com as crianças</td>
+                                            <td>R$: 200,00</td>
+                                            <td>10/05/2023</td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <!-- Content Row -->
                     <div class="row">
@@ -479,6 +856,8 @@
                     </div>
 
                 </div>
+                <p>
+           
                 <!-- /.container-fluid -->
 
             </div>
