@@ -362,6 +362,81 @@
                         </a>
                     </div>
 
+                    <!--Collapse de Atualizção-->
+                    <div class="collapse mb-4" id="atualizar">
+                        <div class="card card-body" style="background-color: #0f4675 ;">
+                            <!--Formulario-->
+                            <div class="d-flex align-items-center justify-content-center mb-0" style="height: 75 vh">
+                                <div class=" rounded-2 p-2 mb-0 " style="height: 650px; width: 650px;">
+                                <div class="container rounded-5 p-5 mb-0" style="background-color: #0f4675 ;">
+                                <div class="container d-flex justify-content-center p-1 ">
+                            </div>
+                            <h3 class="text-center mt-3 text-white" style="font-family: 'Tilt Warp', cursive;">Atualize as informações</h3>
+                            <form class="p-3 was-validated">
+                  
+                              <!--Podemos usar o placeholder="Digite seu nome"-->
+                              <!--podemos usar o for="id" do label para refenciar o id do input-->
+                             <!--CAMPO DO NOME-->
+                                <div class="my-3">
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="text" class="form-control" id="nome"  name="nome">
+                                        <label for="nome">Atualizar Descrição</label>
+                                    </div>
+                              </div>
+          
+                              <!--CAMPO DO EMAIL-->
+                              <div class="my-3">
+                                  <div class="form-floating mb-3 mt-3">
+                                    <input type="number" class="form-control" id="parcela"   name="email">
+                                    <label for="email">Atualizar quantidade de parcelas</label>
+                                  </div>
+                                </div>
+          
+                              <!--CAMPO DO SALARIO-->
+                              <div class="my-3">
+                                  <div class="my-3">
+                                      <div class="form-floating mb-3 mt-3">
+                                        <input type="number" class="form-control" id="salario"  name="salario">
+                                        <label for="salario">Atulizar Valor</label>
+                                      </div>
+                                    </div>
+                              </div>
+                              
+                                <div class="my-3">
+                                    <div class="my-3">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="date" class="form-control" id="data"  name="data">
+                                            <label for="data">Atualizar Data</label>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                              <!--CAMPOS DE SELECTS-->
+                                <select class="form-select mt-3" aria-label="Default select example">
+                                  <option selected>Atulizar Forma de pagamento</option>
+                                  <option value="1">Crédito</option>
+                                  <option value="2">Débito</option>
+                                  <option value="3">Boleto</option>
+                                  <option value="3">Dinheiro</option>
+                                </select>
+                              <!--Botões-->
+                              <div class="d-flex justify-content-end mt-3">
+                                <a href="#atualizar" class="w-100 mr-2" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                    <button type="button" class="btn btn-lg btn-danger rounded-2 w-100 mr-2">Cancelar</button>
+                                </a>
+                                <a class="btn btn-lg btn-warning rounded-2 ms-2 w-100 " href="#" data-toggle="modal" data-target="#atualizacoes">
+                                    Atualizar
+                                </a>
+                              </div>   
+                        </form>
+                     
+                     </div>
+                    </div>
+                    </div>
+                      </div>
+                    </div>
+                    <!--Fim collapse atualização-->
+                    
                     <!--START COLLAPSE-->
                     <!--Colapse compra /////////////////////////////////////////////////////////////////////////// -->
                 
@@ -375,7 +450,7 @@
                  
                           </div>
                           <h3 class="text-center mt-3 text-white" style="font-family: 'Tilt Warp', cursive;">Cadastre uma compra</h3>
-                          <form class="p-3 was-validated">
+                <form class="p-3 was-validated">
                 
                       <!--Podemos usar o placeholder="Digite seu nome"-->
                       <!--podemos usar o for="id" do label para refenciar o id do input-->
@@ -404,16 +479,17 @@
                               </div>
                             </div>
                       </div>
-  
+                      
+                        <div class="my-3">
+                            <div class="my-3">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="date" class="form-control" id="data"  name="data">
+                                    <label for="data">Data da tarefa</label>
+                                </div>
+                            </div>
+                        </div>
+
                       <!--CAMPOS DE SELECTS-->
-                      <select class="form-select" aria-label="Default select example">
-                          <option selected>Nivel de importância</option>
-                          <option value="1">baixo</option>
-                          <option value="2">médio</option>
-                          <option value="3">alto</option>
-                          <option value="3">irrelevante</option>
-                        </select>
-  
                         <select class="form-select mt-3" aria-label="Default select example">
                           <option selected>Forma de pagamento</option>
                           <option value="1">Crédito</option>
@@ -431,7 +507,7 @@
   
                       
                       
-                   </form>
+                </form>
                    
                    </div>
                   </div>
@@ -464,6 +540,21 @@
                                           <td>Compra do mes</td>
                                           <td>R$: 900,00</td>
                                           <td>13/05/2023</td>
+                                          <td>
+                                            <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                <button type="button" class="btn btn-warning">
+                                                    <img
+                                                    src="../Imagens/caneta.png"
+                                                    trigger="hover"
+                                                    colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                    style="width:20px;height:20px">
+                                                </button>
+                                        </a>
+                                        <button type="button" class="btn btn-danger">
+                                            <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                            </lord-icon>
+                                        </button>
+                                        </td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -489,61 +580,59 @@
                           <h3 class="text-center mt-1 text-white" style="font-family: 'Tilt Warp', cursive;">Cadastre uma conta</h3>
                           <form class="p-3 was-validated">
                 
-                      <!--Podemos usar o placeholder="Digite seu nome"-->
-                      <!--podemos usar o for="id" do label para refenciar o id do input-->
-                     <!--CAMPO DO NOME-->
+                            <!--Podemos usar o placeholder="Digite seu nome"-->
+                            <!--podemos usar o for="id" do label para refenciar o id do input-->
+                           <!--CAMPO DO NOME-->
                               <div class="my-3">
-                        <div class="form-floating mb-3 mt-3">
-                          <input type="text" class="form-control" id="nome"  name="nome">
-                          <label for="nome">Descrição da conta</label>
-                        </div>
-                      </div>
-  
-                      <!--CAMPO DO EMAIL-->
-                      <div class="my-3">
-                          <div class="form-floating mb-3 mt-3">
-                            <input type="number" class="form-control" id="parcela"   name="email">
-                            <label for="email">Quantas parcelas?</label>
-                          </div>
-                        </div>
-  
-                      <!--CAMPO DO SALARIO-->
-                      <div class="my-3">
-                          <div class="my-3">
-                              <div class="form-floating mb-3 mt-3">
-                                <input type="number" class="form-control" id="salario"  name="salario">
-                                <label for="salario">Valor da conta</label>
-                              </div>
+                                  <div class="form-floating mb-3 mt-3">
+                                      <input type="text" class="form-control" id="nome"  name="nome">
+                                      <label for="nome">Descrição da conta</label>
+                                  </div>
                             </div>
-                      </div>
-  
-                      <!--CAMPOS DE SELECTS-->
-                      <select class="form-select" aria-label="Default select example">
-                          <option selected>Nivel de importância</option>
-                          <option value="1">baixo</option>
-                          <option value="2">médio</option>
-                          <option value="3">alto</option>
-                          <option value="3">irrelevante</option>
-                        </select>
-  
-                        <select class="form-select mt-3" aria-label="Default select example">
-                          <option selected>Forma de pagamento</option>
-                          <option value="1">Crédito</option>
-                          <option value="2">Débito</option>
-                          <option value="3">Boleto</option>
-                          <option value="3">Dinheiro</option>
-                        </select>
-  
-                        
-  
-                      <!--Botões-->
-                      <div class="d-flex justify-content-end mt-3">
-                          <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
-                      </div>
-  
-                      
-                      
-                   </form>
+        
+                            <!--CAMPO DO EMAIL-->
+                            <div class="my-3">
+                                <div class="form-floating mb-3 mt-3">
+                                  <input type="number" class="form-control" id="parcela"   name="email">
+                                  <label for="email">Quantas parcelas?</label>
+                                </div>
+                              </div>
+        
+                            <!--CAMPO DO SALARIO-->
+                            <div class="my-3">
+                                <div class="my-3">
+                                    <div class="form-floating mb-3 mt-3">
+                                      <input type="number" class="form-control" id="salario"  name="salario">
+                                      <label for="salario">Valor da conta</label>
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                              <div class="my-3">
+                                  <div class="my-3">
+                                      <div class="form-floating mb-3 mt-3">
+                                          <input type="date" class="form-control" id="data"  name="data">
+                                          <label for="data">Data</label>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                            <!--CAMPOS DE SELECTS-->
+                              <select class="form-select mt-3" aria-label="Default select example">
+                                <option selected>Forma de pagamento</option>
+                                <option value="1">Crédito</option>
+                                <option value="2">Débito</option>
+                                <option value="3">Boleto</option>
+                                <option value="3">Dinheiro</option>
+                              </select>
+        
+                              
+                              
+                            <!--Botões-->
+                            <div class="d-flex justify-content-end mt-3">
+                                <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
+                            </div>  
+                      </form>
                    
                    </div>
                   </div>
@@ -576,6 +665,21 @@
                                             <td>conta de agua</td>
                                             <td>R$: 100,00</td>
                                             <td>13/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">3</th>
@@ -583,6 +687,21 @@
                                             <td>conta de luz</td>
                                             <td>R$: 200,00</td>
                                             <td>13/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                       </tbody>
                                     </table>
@@ -603,66 +722,66 @@
                               <div class=" rounded-2 p-2 mb-0 " style="height: 650px; width: 650px;">
                               <div class="container rounded-5 p-5 mb-0" style="background-color: #0f4675 ;">
                               <div class="container d-flex justify-content-center p-1 ">
-                 
                           </div>
                           <h3 class="text-center mt-3 text-white" style="font-family: 'Tilt Warp', cursive;">Cadastre a atividade de lazer</h3>
                           <form class="p-3 was-validated">
                 
-                      <!--Podemos usar o placeholder="Digite seu nome"-->
-                      <!--podemos usar o for="id" do label para refenciar o id do input-->
-                     <!--CAMPO DO NOME-->
+                            <!--Podemos usar o placeholder="Digite seu nome"-->
+                            <!--podemos usar o for="id" do label para refenciar o id do input-->
+                           <!--CAMPO DO NOME-->
                               <div class="my-3">
-                        <div class="form-floating mb-3 mt-3">
-                          <input type="text" class="form-control" id="nome"  name="nome">
-                          <label for="nome">Descrição da atividade de lazer</label>
-                        </div>
-                      </div>
-  
-                      <!--CAMPO DO EMAIL-->
-                      <div class="my-3">
-                          <div class="form-floating mb-3 mt-3">
-                            <input type="number" class="form-control" id="parcela"   name="email">
-                            <label for="email">Quantas parcelas?</label>
-                          </div>
-                        </div>
-  
-                      <!--CAMPO DO SALARIO-->
-                      <div class="my-3">
-                          <div class="my-3">
-                              <div class="form-floating mb-3 mt-3">
-                                <input type="number" class="form-control" id="salario"  name="salario">
-                                <label for="salario">Valor da atividade</label>
-                              </div>
+                                  <div class="form-floating mb-3 mt-3">
+                                      <input type="text" class="form-control" id="nome"  name="nome">
+                                      <label for="nome">Descrição do Lazer</label>
+                                  </div>
                             </div>
-                      </div>
-  
-                      <!--CAMPOS DE SELECTS-->
-                      <select class="form-select" aria-label="Default select example">
-                          <option selected>Nivel de importância</option>
-                          <option value="1">baixo</option>
-                          <option value="2">médio</option>
-                          <option value="3">alto</option>
-                          <option value="3">irrelevante</option>
-                        </select>
-  
-                        <select class="form-select mt-3" aria-label="Default select example">
-                          <option selected>Forma de pagamento</option>
-                          <option value="1">Crédito</option>
-                          <option value="2">Débito</option>
-                          <option value="3">Boleto</option>
-                          <option value="3">Dinheiro</option>
-                        </select>
-  
-                        
-  
-                      <!--Botões-->
-                      <div class="d-flex justify-content-end mt-3">
-                          <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
-                      </div>
-  
-                      
-                      
-                   </form>
+        
+                            <!--CAMPO DO EMAIL-->
+                            <div class="my-3">
+                                <div class="form-floating mb-3 mt-3">
+                                  <input type="number" class="form-control" id="parcela"   name="email">
+                                  <label for="email">Quantas parcelas?</label>
+                                </div>
+                              </div>
+        
+                            <!--CAMPO DO SALARIO-->
+                            <div class="my-3">
+                                <div class="my-3">
+                                    <div class="form-floating mb-3 mt-3">
+                                      <input type="number" class="form-control" id="salario"  name="salario">
+                                      <label for="salario">Valor do Lazer</label>
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                              <div class="my-3">
+                                  <div class="my-3">
+                                      <div class="form-floating mb-3 mt-3">
+                                          <input type="date" class="form-control" id="data"  name="data">
+                                          <label for="data">Data</label>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                            <!--CAMPOS DE SELECTS-->
+                              <select class="form-select mt-3" aria-label="Default select example">
+                                <option selected>Forma de pagamento</option>
+                                <option value="1">Crédito</option>
+                                <option value="2">Débito</option>
+                                <option value="3">Boleto</option>
+                                <option value="3">Dinheiro</option>
+                              </select>
+        
+                              
+        
+                            <!--Botões-->
+                            <div class="d-flex justify-content-end mt-3">
+                                <button type="button" class="btn btn-lg btn-success rounded-2 w-100">Cadastrar</button>
+                            </div>
+        
+                            
+                            
+                      </form>
                    
                    </div>
                   </div>
@@ -686,6 +805,7 @@
                                           <th scope="col">Descrição</th>
                                           <th scope="col">valor</th>
                                           <th scope="col">data</th>
+                                          <th scope="col">Administrar</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -695,6 +815,21 @@
                                             <td>Parque de diversões</td>
                                             <td>R$: 250,00</td>
                                             <td>04/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">5</th>
@@ -702,7 +837,23 @@
                                             <td>cinema com as crianças</td>
                                             <td>R$: 200,00</td>
                                             <td>10/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
+                                          
                                       </tbody>
                                     </table>
                               </div>
@@ -764,7 +915,7 @@
                             <!--Botões-->
                             <div class="d-flex justify-content-end mt-3">
                                 <button type="button" class="btn btn-lg btn-danger rounded-2 me-2">Cancelar</button>
-                                <a class="btn btn-lg btn-warning rounded-2 ms-2" href="#" data-toggle="modal" data-target="#atualizar">
+                                <a class="btn btn-lg btn-warning rounded-2 ms-2" href="#" data-toggle="modal" data-target="#atualizacao">
                                     Atualizar
                                 </a>
                             </div>
@@ -772,6 +923,7 @@
                         </div>
                     </div>
                     <!--Fim collapse Perfil-->
+
 
 
 
@@ -892,6 +1044,7 @@
                                             <th scope="col">Descrição</th>
                                             <th scope="col">valor</th>
                                             <th scope="col">data</th>
+                                            <th scope="col">Administrar</th>
                                           </tr>
                                         </thead>
                                         <tbody>
@@ -901,6 +1054,21 @@
                                             <td>Compra do mes</td>
                                             <td>R$: 900,00</td>
                                             <td>13/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">2</th>
@@ -908,6 +1076,21 @@
                                             <td>conta de agua</td>
                                             <td>R$: 100,00</td>
                                             <td>13/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">3</th>
@@ -915,6 +1098,21 @@
                                             <td>conta de luz</td>
                                             <td>R$: 200,00</td>
                                             <td>13/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">4</th>
@@ -922,6 +1120,21 @@
                                             <td>Parque de diversões</td>
                                             <td>R$: 250,00</td>
                                             <td>04/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <th scope="row">5</th>
@@ -929,6 +1142,21 @@
                                             <td>cinema com as crianças</td>
                                             <td>R$: 200,00</td>
                                             <td>10/05/2023</td>
+                                            <td>
+                                                <a href="#atualizar" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                                    <button type="button" class="btn btn-warning">
+                                                        <img
+                                                        src="../Imagens/caneta.png"
+                                                        trigger="hover"
+                                                        colors="primary:#3a3347,secondary:#242424,tertiary:#2516c7,quaternary:#ebe6ef"
+                                                        style="width:20px;height:20px">
+                                                    </button>
+                                            </a>
+                                            <button type="button" class="btn btn-danger">
+                                                <lord-icon src="https://cdn.lordicon.com/jmkrnisz.json" trigger="hover" colors="primary:#121331" style="width:20px;height: 20px">
+                                                </lord-icon>
+                                            </button>
+                                            </td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -980,7 +1208,7 @@
     </div>
 
     <!--MODAL ATUALIZAR PERFIL-->
-    <div class="modal fade mb-1" id="atualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade mb-1" id="atualizacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -990,6 +1218,28 @@
                         <span class="text-danger" aria-hidden="true">
                             <a href="#perfil" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
                                 <a href="#perfil" class="nav-link" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">            
+                                    X
+                                </a>
+                            </a>
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body h2 border-top-0 text-success">Atualizado com Sucesso</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal atualizar a pagina de atualização-->
+    <div class="modal fade mb-1" id="atualizacoes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 " style="height:10px;">
+                    <h2 class="modal-title text-success" id="exampleModalLabel"></h2>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span class="text-danger" aria-hidden="true">
+                            <a href="#perfil" class="" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">
+                                <a href="#atualizar" class="nav-link" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false">            
                                     X
                                 </a>
                             </a>
